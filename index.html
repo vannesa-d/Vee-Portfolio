@@ -26,14 +26,14 @@
             <h3>Hello, It's Me</h3>
             <h1>Buhle Vannesa Dube</h1>
             <h3>And I'm a <span>Full-Stack Developer with a focus on Business Intelligence.</span></h3>
-            <p>Welcome to my portfolio, where passion meets precision in every web & app development project.
+            <p>Welcome to my portfolio, where innovation meets insight. As a full-stack developer specializing in business intelligence, I craft web and app solutions that not only function seamlessly but also drive data-driven decisions.
             <br> 
-            Explore my work and discover how I can help bring your digital vision to life.</p>
+            Explore my work and see how I can turn your digital vision into intelligent solutions.</p>
             <div class="social-media">
               <a href="https://www.instagram.com/queenb.rsa/"><i class='bx bxl-instagram-alt'></i></a>
               <a href="https://www.linkedin.com/in/buhle-vannesa-dube-7760632a9/"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="file:///C:/Users/buhle/Downloads/Buhle%20Dube%20CV%20Document%20(3).pdf" class="btn">Download CV</a>
+            <a href="Buhle Vannesa Dube CV.pdf" class="btn">Download CV</a>
             </a>
             
         </div>
@@ -123,15 +123,16 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
 
-        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.init("9TL7v9Y8qhx7e4M1g");
     
         document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault(); 
     
             emailjs.sendForm("service_sm9tnoe", "template_kqy22y7", this)
-                .then(function () {
-                    alert("Message sent successfully!");
-                }, function (error) {
+            .then(function () {
+                alert("Message sent successfully!");
+                location.reload();
+            }, function (error) {
                     alert("Failed to send message. Please try again.");
                     console.error("Error:", error);
                 });
